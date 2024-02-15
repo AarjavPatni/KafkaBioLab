@@ -20,5 +20,5 @@ def produce_message(topic, message):
     # Get configuration from config.ini located in ../../config.ini
     conf = read_ccloud_config("../../config.ini")
     producer = Producer(conf)
-    producer.produce(topic, key="key", value=message) # TODO: Add key and value
+    producer.produce(topic, key="key", value=message)  # TODO: Add key and value
     producer.flush()
